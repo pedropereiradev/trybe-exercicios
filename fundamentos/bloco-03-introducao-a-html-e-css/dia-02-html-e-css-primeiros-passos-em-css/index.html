@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
+        body {
+            font-size: 16px;
+            background-color: rgb(218, 207, 194);
+        }
+
         h1 {
             font-size: 65px;
             color: orange;
+            font-family: sans-serif;
         }
 
         ul {
             background-color: lightgray;
+            text-align: center;
+            font-style: italic;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 3em;
         }
 
         .color-list {
             background-color: rgb(171, 214, 187);
+        }
+
+        #lorem-ipsum {
+            font-size: 1em;
+            font-weight: 100;
+            line-height: 30px;
+            font-family: monospace;
         }
 
     </style>
@@ -24,10 +44,14 @@
     <p class="color-list">Qual é a sua cor favorita?</p>
 
     <ul class="color-list">
-        <li>Amarelo</li>
-        <li>Vermelho</li>
-        <li>Marrom</li>
+        <li style="color: yellow;">Amarelo</li>
+        <li style="color: red;">Vermelho</li>
+        <li style="color: brown;">Marrom</li>
     </ul>
+
+    <p id="lorem-ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor, arcu nec aliquet molestie, neque dolor elementum lacus, euismod condimentum leo magna molestie velit. Cras ut lectus in metus condimentum eleifend sed vel eros. Mauris fringilla id tortor nec malesuada. Aliquam erat volutpat. Nunc venenatis est vitae enim lacinia, eget auctor ipsum aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in ornare nisi, a eleifend lacus. In facilisis enim id neque accumsan ultrices. Vivamus et mattis est. Nulla blandit ut dolor at eleifend. Morbi consectetur tellus nec efficitur volutpat. Cras eu elit in velit tempor eleifend. Duis purus dolor, auctor a molestie id, venenatis eleifend leo. Sed arcu risus, hendrerit at imperdiet ut, pharetra sit amet libero.
+    </p>
     
 </body>
 </html>
