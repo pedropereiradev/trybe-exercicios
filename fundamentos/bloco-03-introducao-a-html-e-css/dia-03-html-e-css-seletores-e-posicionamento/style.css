@@ -95,7 +95,7 @@
     font-family: monospace;
 }
 
-#selectors ul, ol{
+#selectors ul, #selectors ol{
     list-style: none;
 }
 
@@ -113,5 +113,4 @@
   position: absolute;
   top: 1200px;
 }
-
 
