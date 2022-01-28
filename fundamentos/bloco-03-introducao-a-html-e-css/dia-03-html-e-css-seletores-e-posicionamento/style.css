@@ -26,3 +26,42 @@
 .border {  
     border: 5px solid black;  
 }
+
+/*CSS - Posicionamento de elementos*/
+/*
+    1 - Posicione o Mário acima do Goomba.
+    2 - Posicione a tag p para que fique dentro do balão de fala.
+    3 - Posicione o balão para que se torne uma fala de Bowser.
+*/
+.super-mario {
+  width: 200px;
+  position: absolute;
+}
+
+.goomba {
+  width: 100px;
+  position: absolute;
+  top: 570px;
+  left: 70px;
+}
+
+.baloon {
+    position: absolute;
+    left: 400px;
+    z-index: 1;
+}
+
+.speach {
+  font-size: 25px;
+  position: absolute;
+  left: 420px;
+  top: 335px;
+  z-index: 2;
+}
+
+.bowser {
+  width: 200px;
+  position: absolute;
+  left: 700px;
+  top: 500px;
+}
