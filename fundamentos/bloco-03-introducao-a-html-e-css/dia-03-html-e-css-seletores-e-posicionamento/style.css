@@ -78,23 +78,24 @@
     5 - No 'style.css', adicione a propriedade 'list-style: none' para ambas as listas.
 */
 
-#last {
+#selectors {
     top: 800px;
     position: absolute;
 }
 
-#last h3, p {
+#selectors h3, p {
     text-align: center;
 }
 
-li:hover {
+#selectors li:hover {
     background-color: lightgrey;
 }
 
-li:active {
+#selectors li:active {
     font-family: monospace;
 }
 
-ul, ol{
+#selectors ul, ol{
     list-style: none;
 }
+
