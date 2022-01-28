@@ -27,8 +27,8 @@
     border: 5px solid black;  
 }
 
-/*CSS - Posicionamento de elementos*/
 /*
+  CSS - Posicionamento de elementos
     1 - Posicione o Mário acima do Goomba.
     2 - Posicione a tag p para que fique dentro do balão de fala.
     3 - Posicione o balão para que se torne uma fala de Bowser.
@@ -66,8 +66,8 @@
   top: 500px;
 }
 
-/*CSS - Agrupando seletores*/
 /*
+  CSS - Agrupando seletores
     1 - Adicione uma lista ordenada dos 3 melhores sites que você conhece.
     2 - Crie um arquivo no mesmo diretório e nomeie-o de 'style.css'.
     3 - Nesse arquivo .css, adicione os estilos para que:
@@ -98,4 +98,20 @@
 #selectors ul, ol{
     list-style: none;
 }
+
+/*
+  CSS - Combinações e Classes Descendentes
+    1 - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
+    2 - Faça todas as tags Header (h1, h2...) possuírem cor de fonte vermelha e, se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente uma borda de 1px preta e sólida.
+    3 - Faça todas as li's terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito.
+    4 - Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de fundo rosa.
+    5 - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site"
+
+*/
+
+#combinations {
+  position: absolute;
+  top: 1200px;
+}
+
 
