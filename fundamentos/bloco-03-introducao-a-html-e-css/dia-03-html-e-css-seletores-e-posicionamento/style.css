@@ -158,10 +158,80 @@
     4 - Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de fundo rosa.
     5 - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site"
 
+    Dica 1: Utilize o seletor :hover para controlar o passar do mouse.
+    Dica 2: Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
+
 */
 
-/*#combinations {
+#combinations {
   position: absolute;
-  top: 1200px;
+  top: 1600px;
 }
+
+#combinations ol li {
+  background-color: yellow;
+}
+
+#combinations ol li:nth-of-type(2n){
+  color: green;
+}
+
+#combinations ol li:nth-of-type(2n+1){
+  text-transform: uppercase;
+}
+
+#combinations h1, #combinations h2, #combinations h3, #combinations h4, #combinations h5, #combinations h6 {
+  color: red;
+}
+
+#combinations h1 em, #combinations h2 em, #combinations h3 em, #combinations h4 em, #combinations h5 em, #combinations h6 em{
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+#combinations li {
+  font-size: 20px;
+}
+
+#combinations li em {
+  font-weight: bold;
+}
+
+#combinations #prog-lang li:nth-of-type(1), #combinations #prog-lang li:nth-of-type(2), #combinations #prog-lang li:nth-of-type(3) {
+  color: blue;
+}
+/*
+  Source: https://www.w3schools.com/cssref/sel_attr_begin.asp
 */
+#combinations #prog-lang [id^="java"]{
+  background-color: pink;
+}
+
+#combinations #developer-allies a {
+  text-decoration: none;
+}
+
+#combinations #developer-allies a:hover {
+  font-weight: bold;
+}
+
+#combinations #developer-allies #stackoverflow:hover {
+  color: orange;
+}
+
+#combinations #developer-allies #w3schools:hover {
+  color: green;
+}
+
+#combinations #developer-allies #mozilla:hover {
+  color: black;
+}
+
+#combinations #developer-allies #devdocs:hover {
+  color: rgb(248, 252, 10);
+}
+
+#combinations #developer-allies #trybe:hover {
+  color: greenyellow;
+}
+
