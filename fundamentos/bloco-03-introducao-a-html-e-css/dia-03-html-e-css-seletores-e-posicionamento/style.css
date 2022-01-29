@@ -99,6 +99,57 @@
     list-style: none;
 }
 
+/* 
+  CSS - Pseudoclasses
+    1 - Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.
+    2 - Faça cada div ter uma cor própria.
+    3 - Estilize cada uma das tags h3 .
+    4 - Faça a terceira div ser maior que as demais.
+    5 - Deixe as tags ímpares h3 com o texto em itálico.
+*/
+
+#pseudoclasses {
+  position: absolute;
+  top: 1200px;
+}
+
+#pseudoclasses div:hover {
+  border: 1px solid;
+}
+
+#pseudoclasses div:nth-of-type(1) h3{
+  background-color: red;
+  font-family: monospace;
+}
+
+#pseudoclasses div:nth-of-type(2) h3{
+  background-color: green;
+  font-family: serif;
+}
+
+#pseudoclasses div:nth-of-type(3) h3{
+  background-color: purple;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+#pseudoclasses div:nth-of-type(4) h3{
+  background-color: rgb(61, 8, 8);
+  font-family: Verdana;
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+
+#pseudoclasses div:nth-of-type(5) h3{
+  background-color: rgb(178, 228, 230);
+  font-style: oblique;
+}
+
+#pseudoclasses h3:nth-of-type(2n+1){
+  font-style: italic;
+}
+
+
 /*
   CSS - Combinações e Classes Descendentes
     1 - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
@@ -109,8 +160,8 @@
 
 */
 
-#combinations {
+/*#combinations {
   position: absolute;
   top: 1200px;
 }
-
+*/
