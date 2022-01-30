@@ -1,0 +1,237 @@
+/*CSS - Box Model*/
+.caixa {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
+
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+.padding {
+    padding: 20px;
+}
+
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+.margin {
+    margin: 30px;
+}
+
+/* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+.border {  
+    border: 5px solid black;  
+}
+
+/*
+  CSS - Posicionamento de elementos
+    1 - Posicione o Mário acima do Goomba.
+    2 - Posicione a tag p para que fique dentro do balão de fala.
+    3 - Posicione o balão para que se torne uma fala de Bowser.
+*/
+.super-mario {
+  width: 200px;
+  position: absolute;
+}
+
+.goomba {
+  width: 100px;
+  position: absolute;
+  top: 570px;
+  left: 70px;
+}
+
+.baloon {
+    position: absolute;
+    left: 400px;
+    z-index: 1;
+}
+
+.speach {
+  font-size: 25px;
+  position: absolute;
+  left: 420px;
+  top: 335px;
+  z-index: 2;
+}
+
+.bowser {
+  width: 200px;
+  position: absolute;
+  left: 700px;
+  top: 500px;
+}
+
+/*
+  CSS - Agrupando seletores
+    1 - Adicione uma lista ordenada dos 3 melhores sites que você conhece.
+    2 - Crie um arquivo no mesmo diretório e nomeie-o de 'style.css'.
+    3 - Nesse arquivo .css, adicione os estilos para que:
+        O texto das tags 'h1' e 'p' estejam centralizados.
+        A cor de fundo da sua lista mude quando o cursor estiver sobre o item.
+        A fonte do item mude quando ele for clicado.
+    4 - Adicione uma lista não ordenada com, pelo menos, 3 características que você gosta.
+    5 - No 'style.css', adicione a propriedade 'list-style: none' para ambas as listas.
+*/
+
+#selectors {
+    top: 800px;
+    position: absolute;
+}
+
+#selectors h3, p {
+    text-align: center;
+}
+
+#selectors li:hover {
+    background-color: lightgrey;
+}
+
+#selectors li:active {
+    font-family: monospace;
+}
+
+#selectors ul, #selectors ol{
+    list-style: none;
+}
+
+/* 
+  CSS - Pseudoclasses
+    1 - Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.
+    2 - Faça cada div ter uma cor própria.
+    3 - Estilize cada uma das tags h3 .
+    4 - Faça a terceira div ser maior que as demais.
+    5 - Deixe as tags ímpares h3 com o texto em itálico.
+*/
+
+#pseudoclasses {
+  position: absolute;
+  top: 1200px;
+}
+
+#pseudoclasses div:hover {
+  border: 1px solid;
+}
+
+#pseudoclasses div:nth-of-type(1) h3{
+  background-color: red;
+  font-family: monospace;
+}
+
+#pseudoclasses div:nth-of-type(2) h3{
+  background-color: green;
+  font-family: serif;
+}
+
+#pseudoclasses div:nth-of-type(3) h3{
+  background-color: purple;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+#pseudoclasses div:nth-of-type(4) h3{
+  background-color: rgb(61, 8, 8);
+  font-family: Verdana;
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+
+#pseudoclasses div:nth-of-type(5) h3{
+  background-color: rgb(178, 228, 230);
+  font-style: oblique;
+}
+
+#pseudoclasses h3:nth-of-type(2n+1){
+  font-style: italic;
+}
+
+
+/*
+  CSS - Combinações e Classes Descendentes
+    1 - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
+    2 - Faça todas as tags Header (h1, h2...) possuírem cor de fonte vermelha e, se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente uma borda de 1px preta e sólida.
+    3 - Faça todas as li's terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito.
+    4 - Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de fundo rosa.
+    5 - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site"
+
+    Dica 1: Utilize o seletor :hover para controlar o passar do mouse.
+    Dica 2: Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
+
+*/
+
+#combinations {
+  position: absolute;
+  top: 1600px;
+}
+
+#combinations ol li {
+  background-color: yellow;
+}
+
+#combinations ol li:nth-of-type(2n){
+  color: green;
+}
+
+#combinations ol li:nth-of-type(2n+1){
+  text-transform: uppercase;
+}
+
+#combinations h1, #combinations h2, #combinations h3, #combinations h4, #combinations h5, #combinations h6 {
+  color: red;
+}
+
+#combinations h1 em, #combinations h2 em, #combinations h3 em, #combinations h4 em, #combinations h5 em, #combinations h6 em{
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+#combinations li {
+  font-size: 20px;
+}
+
+#combinations li em {
+  font-weight: bold;
+}
+
+#combinations #prog-lang li:nth-of-type(1), #combinations #prog-lang li:nth-of-type(2), #combinations #prog-lang li:nth-of-type(3) {
+  color: blue;
+}
+/*
+  Source: https://www.w3schools.com/cssref/sel_attr_begin.asp
+*/
+#combinations #prog-lang [id^="java"]{
+  background-color: pink;
+}
+
+#combinations #developer-allies a {
+  text-decoration: none;
+}
+
+#combinations #developer-allies a:hover {
+  font-weight: bold;
+}
+
+#combinations #developer-allies #stackoverflow:hover {
+  color: orange;
+}
+
+#combinations #developer-allies #w3schools:hover {
+  color: green;
+}
+
+#combinations #developer-allies #mozilla:hover {
+  color: black;
+}
+
+#combinations #developer-allies #devdocs:hover {
+  color: rgb(248, 252, 10);
+}
+
+#combinations #developer-allies #trybe:hover {
+  color: greenyellow;
+}
+
