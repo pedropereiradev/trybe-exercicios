@@ -10,10 +10,10 @@
 
 <body>
     <!--insira os elementos aqui-->
-    <header>
+    <header class="header">
         <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
     </header>
-    <nav>
+    <nav class="nav-bar">
         <ul>
             <li><a href="">Página Inicial</a></li>
             <li><a href="">Sobre</a></li>
@@ -22,11 +22,11 @@
     </nav>
     <section>
         <article>
-            <section>
+            <section class="facts">
                 <h2>Fatos sobre o Stomatopoda</h2>
-                <section>
+                <section class="general-information">
                     <h3>Informações Gerais</h3>
-                    <table border="1">
+                    <table>
                         <tr>
                             <th>Classificação científica:</th>
                             <th>Reino</th>
@@ -64,44 +64,66 @@
                     </p>
                 </section>
                 <section>
-                    <h3>O pesadelo do fundo do mar</h3>
-                    <p>
-                        Essas criaturas são uma das mais violentas da face da Terra. Elas tem dois apêndices raptoriais na frente de seu corpo capazes de desferir um dos mais violentos e rápidos golpes do reino animal. Seu "soco" representa a velocidade de um tiro calibre .22 (equivalente a <b>82km/h</b>) e uma pressão de impacto de 60kg/cm³. Seu soco é tão forte que eles nao podem viver em aquários, pois quebram os vidros.
-                    </p>
-                    <img src="images/vidro.jpg" alt="Imagem da Lagosta-boxeadora quebrando um vidro de aquário.">
+                    <div class="section-text">
+                        <h3>O pesadelo do fundo do mar</h3>
+                        <p>
+                            Essas criaturas são uma das mais violentas da face da Terra. Elas tem dois apêndices raptoriais na frente de seu
+                            corpo capazes de desferir um dos mais violentos e rápidos golpes do reino animal. Seu "soco" representa a velocidade
+                            de um tiro calibre .22 (equivalente a <b>82km/h</b>) e uma pressão de impacto de 60kg/cm³. Seu soco é tão forte que
+                            eles nao podem viver em aquários, pois quebram os vidros.
+                        </p>
+                    </div>
+                    <div class="section-image">
+                        <img src="images/vidro.jpg" alt="Imagem da Lagosta-boxeadora quebrando um vidro de aquário.">
+                    </div>
                 </section>
                 <section>
-                    <h3>Armadura blindada</h3>
-                    <p>
-                        Sua carapaça é tão resistente que os pesquisadores tem estudado sua estrutura celular para usar no desenvolvimento de armaduras corporais avançadas para tropas de combate e <b>tanques de guerra</b>.
-                    </p>
-                    <img src="images/armadura.png" alt="Animação de uma Lagosta-boxeadora de armadura">
+                    <div class="section-image">
+                        <img id="second-image" src="images/armadura.png" alt="Animação de uma Lagosta-boxeadora de armadura">
+                    </div>
+                    <div class="section-text">
+                        <h3>Armadura blindada</h3>
+                        <p>
+                            Sua carapaça é tão resistente que os pesquisadores tem estudado sua estrutura celular para usar no desenvolvimento
+                            de armaduras corporais avançadas para tropas de combate e <b>tanques de guerra</b>.
+                        </p>
+                    </div>  
                 </section>
                 <section>
-                    <h3>Visão ultradesenvolvida</h3>
-                    <p>
-                        Nossos olhos possuem três tipos desses receptores - que correspondem à luz azul, verde e vermelha -, que nos permitem
-                        perceber o espectro de cores que vemos. Os cães contam com apenas dois tipos de cones (verde e azul), e é por isso que
-                        eles vêm tons de azul, verde e um pouco de amarelo. Muitos anfíbios, répteis, aves e insetos possuem quatro tipo de
-                        cones, o que significa que espécies dessas classes conseguem ver cores que o nosso cérebro é incapaz de processar.
-                        Algumas espécies específicas de borboletas e possivelmente pombos possuem cinco cones de percepção de cor, o que aumenta
-                        ainda mais a quantidade de pigmentos que eles são capazes de perceber. O sistema de visão dos estomatópodes possui doze
-                        cones sensíveis à luz e outros quatro que filtram a luz (16 cones no total), o que lhes permite ver cores polarizadas e
-                        imagens multiespectrais.
-                    </p>
-                    <p>
-                        Como cada cone pode ver cerca de 100 cores, os estomatópodes são capazes de ver 1024 cores, ou seja, 1 septilhão de
-                        cores. Em comparação, o olho humano vê 106 cores, ou seja, 1 milhão de cores apenas. A visão dos estomatópodes é
-                        sensível à luz ultravioleta, mas ainda é desconhecido se ela pode distinguir a luz infravermelha.
-                    </p>
-                    <p>
-                        Os olhos desse bichinho são comparados com os satélites, de tão potentes que são, esses olhos contêm microvilos que agem
-                        como filtros polarizadores, e a medicina está se inspirando nesses microvilos para fazer um <b>sensor capaz de detectar
-                        células cancerígenas</b>  nas pessoas e no futuro eles querem implementar essa tecnologia até mesmo em câmeras de
-                        smartphones, assim as pessoas podem monitorar sua própria saúde.
-                    </p>
-
-                    <img src="images/olhinhos.jpg" alt="Olhos esbugalhados da Lagosta-boxeadora">
+                    <div class="section-text">
+                        <h3>Visão ultradesenvolvida</h3>
+                        <p>
+                            Nossos olhos possuem três tipos desses receptores - que correspondem à luz azul, verde e vermelha -, que nos
+                            permitem
+                            perceber o espectro de cores que vemos. Os cães contam com apenas dois tipos de cones (verde e azul), e é por isso
+                            que
+                            eles vêm tons de azul, verde e um pouco de amarelo. Muitos anfíbios, répteis, aves e insetos possuem quatro tipo de
+                            cones, o que significa que espécies dessas classes conseguem ver cores que o nosso cérebro é incapaz de processar.
+                            Algumas espécies específicas de borboletas e possivelmente pombos possuem cinco cones de percepção de cor, o que
+                            aumenta
+                            ainda mais a quantidade de pigmentos que eles são capazes de perceber. O sistema de visão dos estomatópodes possui
+                            doze
+                            cones sensíveis à luz e outros quatro que filtram a luz (16 cones no total), o que lhes permite ver cores
+                            polarizadas e
+                            imagens multiespectrais.
+                        </p>
+                        <p>
+                            Como cada cone pode ver cerca de 100 cores, os estomatópodes são capazes de ver 1024 cores, ou seja, 1 septilhão de
+                            cores. Em comparação, o olho humano vê 106 cores, ou seja, 1 milhão de cores apenas. A visão dos estomatópodes é
+                            sensível à luz ultravioleta, mas ainda é desconhecido se ela pode distinguir a luz infravermelha.
+                        </p>
+                        <p>
+                            Os olhos desse bichinho são comparados com os satélites, de tão potentes que são, esses olhos contêm microvilos que
+                            agem
+                            como filtros polarizadores, e a medicina está se inspirando nesses microvilos para fazer um <b>sensor capaz de
+                                detectar
+                                células cancerígenas</b> nas pessoas e no futuro eles querem implementar essa tecnologia até mesmo em câmeras de
+                            smartphones, assim as pessoas podem monitorar sua própria saúde.
+                        </p>
+                    </div>
+                    <div class="section-image">
+                        <img src="images/olhinhos.jpg" alt="Olhos esbugalhados da Lagosta-boxeadora">
+                    </div>
                 </section>
             </section>
             <section>

@@ -1,0 +1,64 @@
+body {
+    background: rgb(34,153,195);
+    background: linear-gradient(0deg, rgba(34,153,195,0.30000000000000004) 0%, rgba(45,253,110,0.3027027027027027) 100%);
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 0;
+}
+
+th, td {
+    padding: 10px;
+}
+
+img {
+    max-width: 500px;
+    margin: 20px ;
+}
+
+.header {
+    width: 50%;
+}
+
+.nav-bar {
+    text-align: center;
+}
+
+.nav-bar li{
+    list-style-type: none;
+    display: inline;
+    margin: 90px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.general-information {
+    text-align: center;
+}
+
+.facts {
+
+}
+
+.section-text {
+    display: inline-block;
+    width: 48%;
+    background: chartreuse;
+    text-align: left;
+}
+
+.section-image {
+    display: inline-block;
+    width: 50%;
+    background-color: coral;
+}
+
+#second-image {
+    max-width: 450px;
+}
