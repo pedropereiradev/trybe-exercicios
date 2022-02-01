@@ -5,9 +5,9 @@ body {
     text-align: center;
 }
 
-table, th, td {
-    border: 1px solid black;
-    margin: 0;
+th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 th, td {
@@ -49,14 +49,14 @@ img {
 .section-text {
     display: inline-block;
     width: 48%;
-    background: chartreuse;
+    /*background: chartreuse;*/
     text-align: left;
 }
 
 .section-image {
     display: inline-block;
     width: 50%;
-    background-color: coral;
+    /*background-color: coral;*/
 }
 
 #second-image {
