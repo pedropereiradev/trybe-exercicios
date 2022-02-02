@@ -24,7 +24,8 @@ console.log(typeof patientId);
 console.log(typeof isEnrolled);
 console.log(typeof patientInfo);
 console.log(typeof patientEmail);
-console.log(typeof patientAge); */
+console.log(typeof patientAge);
+
 
 const base = 5;
 let height = 8;
@@ -36,4 +37,19 @@ area = base * height;
 console.log(area);
 
 perimeter = (base*2) + (height*2);
-console.log(perimeter);
+console.log(perimeter);*/
+
+
+
+//Parte 3 - Condições If e Else
+const nota = 70;
+
+if (nota >= 80) {
+  console.log("Parabéns, você foi aprovada(O)");
+}
+else if (nota<80 && nota>=60) {
+  console.log("Você está na lista de espera")
+}
+else {
+  console.log("Você foi reprovada(o)");
+}
