@@ -110,7 +110,7 @@ if (
  */
 
 //OR Condition exercício
-let weekDay = "sabado";
+/* let weekDay = "sabado";
 
 if (
   weekDay == "segunda-feira" ||
@@ -122,4 +122,26 @@ if (
   console.log("Oba, mais um dia de aprendizado na Trybe >:D");
 } else if (weekDay == "sabado" || weekDay == "domingo") {
   console.log("FINALMENTE, descanso merecido UwU");
+}
+ */
+
+//Parte 5 - Switch e Case
+let passTest = "aprovada";
+
+switch (passTest) {
+  case "aprovada":
+    console.log("Aprovada");
+    break;
+  
+  case "lista":
+    console.log("Lista de espera");
+    break;
+  
+  case "reprovada":
+    console.log("Reprovada");
+    break;
+
+  default:
+    console.log("Não se aplica");
+    break;
 }
