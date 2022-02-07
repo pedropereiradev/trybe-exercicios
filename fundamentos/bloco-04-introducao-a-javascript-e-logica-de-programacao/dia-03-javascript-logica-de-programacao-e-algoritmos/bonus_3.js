@@ -1,18 +1,3 @@
-/* let lado = 5;
-let linha = "";
-
-for (let index = lado; index >= 0; index -= 1) {
-  for (let index2 = lado; index2 >= 0; index2 -= 1) {
-    if (index <= index2) {
-      linha += "*";
-    }
-
-  }
-  console.log(linha);
-  linha = "";
-}
- */
-
 let lado = 5;
 let linha = "";
 let espacoBranco = lado - 1;
