@@ -4,8 +4,10 @@
 
 Usando o objeto abaixo, faça os exercícios 1 a 5:
 
-`let info = {
+<code>
+let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-};`
+};
+</code>
