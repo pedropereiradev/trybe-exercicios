@@ -20,6 +20,12 @@ changeTagText(
 
 
 // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+function changeColorClass(changeClass, index, color) {
+  let newColor = document.getElementsByClassName(changeClass);
+  newColor[index].style.backgroundColor = color;
+}
+
+changeColorClass("main-content", 0, "green");
 
 
 //  3. Crie uma função que mude a cor do quadrado vermelho para branco.
