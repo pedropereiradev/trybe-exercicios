@@ -25,4 +25,5 @@
 
 ### Manipulação de elementos
 
+##### Arquvios index, style e script
 Neste exercício foi disponibilizado o código HTML e CSS, porém foi utilizado JavaScript para estilizar a página.
