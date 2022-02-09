@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header>
+    <h2 id="page-title">Título</h2>
+    <p id="first-paragraph" class="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="paragraph">Segundo parágrafo!</p>
+  </header>
+  <script>
+    const paragraph = document.getElementById("first-paragraph");
+    paragraph.style.color = "red";
+    document.getElementById("page-title").innerText = "Velozes e Furiosos";
+    document.getElementById("second-paragraph").innerText = "Uma das melhores franquias longas do cinema.";
+    document.getElementById("subtitle").innerText = "Último lançamento: Velozes e Furiosos 9 (2021)";
+    let paragrafo = document.getElementsByClassName("paragraph");
+    for (let index = 0; index < paragrafo.length; index += 1) {
+      paragraph.style.backgroundColor = "blue";
+    }
+    let subtitle = document.getElementsByTagName("h4");
+    subtitle[0].style.color = "green";
+  </script>
+</body>
+
+</html>
