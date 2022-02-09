@@ -29,7 +29,7 @@ changeColorClass("main-content", 0, "green");
 
 
 //  3. Crie uma função que mude a cor do quadrado vermelho para branco.
-
+changeColorClass("center-content", 0, "white");
 
 
 //  4. Crie uma função que corrija o texto da tag <h1>.
