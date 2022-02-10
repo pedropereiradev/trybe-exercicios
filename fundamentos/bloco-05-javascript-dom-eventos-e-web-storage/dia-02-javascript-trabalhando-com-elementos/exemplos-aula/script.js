@@ -59,22 +59,21 @@ childrenOfChildren.appendChild(newChildOfFirstChild);
 let acessThirdChild = childrenOfChildren.lastChild;
 //console.log(acessThirdChild.parentElement.parentElement.nextElementSibling);
 
-let fatherOfFather = document.getElementById("paiDoPai");
+/* let fatherOfFather = document.getElementById("paiDoPai");
 let fatherOfFatherSections = document.getElementsByTagName("section");
 //console.log(fatherOfFatherSections);
 
 for (let i = 0; i < fatherOfFatherSections.length; i += 1) {
   let idName = fatherOfFatherSections[i].id;
   console.log(idName);
-
-  if (
+   if (
     idName !== "pai" &&
     idName !== "elementoOndeVoceEsta" &&
     idName !== "primeiroFilhodoFilho"
   ) {
-    fatherOfFatherSections.remove(idName);
-  }
+    fatherOfFatherSections.remove(section);
+  } 
+  console.log(fatherOfFatherSections);
 }
-
-console.log(document.getElementById("paidopai"));
+ */
 
