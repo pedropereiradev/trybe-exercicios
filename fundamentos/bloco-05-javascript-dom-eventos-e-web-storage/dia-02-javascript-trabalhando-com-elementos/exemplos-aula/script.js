@@ -33,10 +33,10 @@ childrenOfChildren.innerText = 'Adiciona texto ao filho do filho';
 
 // Agora acesse o terceiroFilho a partir de pai
 let father = document.querySelector("#pai");
-console.log(pai);
+//console.log(pai);
 let thirdChild = father.children[2];
 
-console.log(thirdChild);
+//console.log(thirdChild);
 
 
 // Parte 2
@@ -57,4 +57,24 @@ childrenOfChildren.appendChild(newChildOfFirstChild);
 
 // A partir desse filho criado, acesse terceiroFilho
 let acessThirdChild = childrenOfChildren.lastChild;
-console.log(acessThirdChild.parentElement.parentElement.nextElementSibling);
+//console.log(acessThirdChild.parentElement.parentElement.nextElementSibling);
+
+let fatherOfFather = document.getElementById("paiDoPai");
+let fatherOfFatherSections = document.getElementsByTagName("section");
+//console.log(fatherOfFatherSections);
+
+for (let i = 0; i < fatherOfFatherSections.length; i += 1) {
+  let idName = fatherOfFatherSections[i].id;
+  console.log(idName);
+
+  if (
+    idName !== "pai" &&
+    idName !== "elementoOndeVoceEsta" &&
+    idName !== "primeiroFilhodoFilho"
+  ) {
+    fatherOfFatherSections.remove(idName);
+  }
+}
+
+console.log(document.getElementById("paidopai"));
+
