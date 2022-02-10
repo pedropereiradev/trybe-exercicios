@@ -13,3 +13,9 @@ let addSection = document.createElement('section');
 addSection.className = 'center-content';
 addMain.appendChild(addSection);
 
+// 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+let addParagraph = document.createElement('p');
+addParagraph.innerText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet ante ex, sed condimentum tellus mollis sit amet. Sed at justo molestie nisl viverra finibus a vitae dui. Suspendisse et dictum est, ac pellentesque lorem. Nullam viverra est ac convallis volutpat. Integer facilisis libero vitae neque lacinia, in mattis est commodo. Praesent vitae tincidunt mi. Integer quis urna lectus. Donec eu ante libero. Nulla fringilla leo id nibh volutpat, id hendrerit nibh posuere. Nullam dictum tincidunt justo pulvinar fermentum. Etiam vestibulum ultricies dapibus. Nunc sagittis libero et elit posuere euismod.";
+addSection.appendChild(addParagraph);
+
