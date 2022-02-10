@@ -1,3 +1,5 @@
+//Parte 1
+
 // Acesse o elemento elementoOndeVoceEsta
 let whereAreYou = document.querySelector("#elementoOndeVoceEsta");
 
@@ -37,3 +39,22 @@ let thirdChild = father.children[2];
 console.log(thirdChild);
 
 
+// Parte 2
+// Crie um irmão para elementoOndeVoceEsta
+let newSibling = document.createElement('section');
+newSibling.innerText = 'Nova seção criada pelo Javascript';
+father.appendChild(newSibling);
+
+// Crie um filho para elementoOndeVoceEsta
+let newChild = document.createElement("section");
+newChild.innerText = "Nova seção criada pelo Javascript";
+whereAreYou.appendChild(newChild);
+
+// Crie um filho para primeiroFilhoDoFilho
+let newChildOfFirstChild = document.createElement("section");
+newChildOfFirstChild.innerText = "Nova seção criada pelo Javascript";
+childrenOfChildren.appendChild(newChildOfFirstChild);
+
+// A partir desse filho criado, acesse terceiroFilho
+let acessThirdChild = childrenOfChildren.lastChild;
+console.log(acessThirdChild.parentElement.parentElement.nextElementSibling);
