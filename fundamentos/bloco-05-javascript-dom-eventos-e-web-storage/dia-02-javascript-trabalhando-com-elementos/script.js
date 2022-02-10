@@ -26,3 +26,6 @@ addMain.firstChild.appendChild(addParagraph);
 
 // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 mainSectionCreate('left-content');
+
+// 6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+mainSectionCreate('right-content');
