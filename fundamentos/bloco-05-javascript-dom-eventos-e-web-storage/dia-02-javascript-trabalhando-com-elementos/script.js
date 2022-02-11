@@ -81,3 +81,7 @@ addMain.removeChild(addMain.children[1]);
 // 13. Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section;
 let centralizeSection = addMain.children[1];
 centralizeSection.style.marginRight = 'auto';
+
+// 14. Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+let changeBackgrund = addMain.children[0].parentElement
+changeBackgrund.style.backgroundColor = 'green';
