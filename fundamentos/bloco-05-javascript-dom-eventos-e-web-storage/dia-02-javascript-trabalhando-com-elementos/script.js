@@ -9,14 +9,14 @@ addMain.className = 'main-content'
 document.body.appendChild(addMain);
 
 // Função para criar sections na main
-function mainSectionCreate(classe) {
-  let addSection = document.createElement('section');
+function mainSectionCreate(elemento, classe) {
+  let addSection = document.createElement(elemento);
   addSection.className = classe;
   addMain.appendChild(addSection);
 }
 
 // 3. Adicione a tag section com a classe center-content como filho da tag main criada no passo 2
-mainSectionCreate('center-content');
+mainSectionCreate("section", "center-content");
 
 // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 let addParagraph = document.createElement('p');
@@ -25,10 +25,10 @@ addParagraph.innerText =
 addMain.firstChild.appendChild(addParagraph);
 
 // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-mainSectionCreate('left-content');
+mainSectionCreate("section", "left-content");
 
 // 6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-mainSectionCreate('right-content');
+mainSectionCreate("section", "right-content");
 
 //7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 let addImage = document.createElement('img');
@@ -64,3 +64,9 @@ for (let i = 0; i < valuesList.length; i += 1) {
 
   numberList.appendChild(numberListItens);
 }
+
+// 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+// 11. Adicione a classe description nas 3 tags h3 criadas;
+mainSectionCreate('h3', 'description');
+mainSectionCreate('h3', 'description');
+mainSectionCreate('h3', 'description');
