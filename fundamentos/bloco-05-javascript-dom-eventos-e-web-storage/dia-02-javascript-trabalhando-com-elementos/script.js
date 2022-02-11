@@ -74,3 +74,6 @@ mainSectionCreate('h3', 'description');
 
 // 10. Adicione a classe title na tag h1 criada;
 addTitle.className = 'title';
+
+// 12. Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+addMain.removeChild(addMain.children[1]);
