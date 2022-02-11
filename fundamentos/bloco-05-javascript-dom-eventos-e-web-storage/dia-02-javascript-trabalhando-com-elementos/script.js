@@ -70,3 +70,7 @@ for (let i = 0; i < valuesList.length; i += 1) {
 mainSectionCreate('h3', 'description');
 mainSectionCreate('h3', 'description');
 mainSectionCreate('h3', 'description');
+
+
+// 10. Adicione a classe title na tag h1 criada;
+addTitle.className = 'title';
