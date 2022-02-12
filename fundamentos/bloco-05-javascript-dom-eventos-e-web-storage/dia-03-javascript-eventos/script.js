@@ -88,7 +88,7 @@ addButton("Sexta-feira", "btn-friday");
 function addEventClickFriday() {
   let button = document.querySelector("#btn-friday");
   let friday = document.querySelectorAll(".friday");
-  console.log(friday[0].classList);
+
   button.addEventListener("click", function () {
     for (let i = 0; i < friday.length; i += 1) {
       if (friday[i].style.fontWeight === '700') {
@@ -101,3 +101,16 @@ function addEventClickFriday() {
 }
 
 addEventClickFriday();
+
+ function zoomDay() {
+  let days = document.querySelector("#days");
+  
+  days.addEventListener("mouseover", function (overEvent) {
+    overEvent.target.style.fontSize = '25px';
+  });
+  days.addEventListener("mouseout", function (outEvent) {
+    outEvent.target.style.fontSize = '';
+  });
+ }
+
+zoomDay();
