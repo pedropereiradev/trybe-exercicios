@@ -114,3 +114,12 @@ addEventClickFriday();
  }
 
 zoomDay();
+
+function addTask(toDoTask) {
+  let myTasks = document.querySelector(".my-tasks");
+  let newSpan = document.createElement('span');
+  myTasks.appendChild(newSpan);
+  newSpan.innerText = toDoTask;
+}
+
+addTask('Estudar JavaScript');
