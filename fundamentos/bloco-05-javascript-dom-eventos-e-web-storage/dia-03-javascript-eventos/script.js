@@ -50,3 +50,13 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
 
   daysList.appendChild(monthListItem);
 }
+
+function addButton(str) {
+  let buttonsContainer = document.querySelector(".buttons-container")
+  let button = document.createElement("button");
+  button.innerText = str;
+  button.id = "btn-holiday";
+  buttonsContainer.appendChild(button);
+}
+
+addButton('Feriados');
