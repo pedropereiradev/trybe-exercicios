@@ -27,29 +27,33 @@ const dezDaysList = [
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
 
-const daysList = document.querySelector("#days")
+function monthCalendar(month) {
+  const daysList = document.querySelector("#days");
 
-for (let i = 0; i < dezDaysList.length; i += 1) {
-  const monthDays = dezDaysList[i];
-  const monthListItem = document.createElement("li");
-  monthListItem.innerText = monthDays;
-  monthListItem.className = "day";
+  for (let i = 0; i < month.length; i += 1) {
+    const monthDays = month[i];
+    const monthListItem = document.createElement("li");
+    monthListItem.innerText = monthDays;
+    monthListItem.className = "day";
 
-  // https://backefront.com.br/adicionar-classe-js-puro/
-  if (monthDays === 24 || monthDays === 25 || monthDays === 31) {
-    monthListItem.className += " holiday";
+    // https://backefront.com.br/adicionar-classe-js-puro/
+    if (monthDays === 24 || monthDays === 25 || monthDays === 31) {
+      monthListItem.className += " holiday";
+    }
+    if (
+      monthDays === 4 ||
+      monthDays === 11 ||
+      monthDays === 18 ||
+      monthDays === 25
+    ) {
+      monthListItem.className += " friday";
+    }
+
+    daysList.appendChild(monthListItem);
   }
-  if (
-    monthDays === 4 ||
-    monthDays === 11 ||
-    monthDays === 18 ||
-    monthDays === 25
-  ) {
-    monthListItem.className += " friday";
-  }
-
-  daysList.appendChild(monthListItem);
 }
+
+monthCalendar(dezDaysList);
 
 function addButton(str) {
   let buttonsContainer = document.querySelector(".buttons-container")
@@ -60,3 +64,4 @@ function addButton(str) {
 }
 
 addButton('Feriados');
+
