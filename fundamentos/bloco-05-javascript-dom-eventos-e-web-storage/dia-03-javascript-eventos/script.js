@@ -117,9 +117,19 @@ zoomDay();
 
 function addTask(toDoTask) {
   let myTasks = document.querySelector(".my-tasks");
-  let newSpan = document.createElement('span');
-  myTasks.appendChild(newSpan);
-  newSpan.innerText = toDoTask;
+  let newTask = document.createElement('span');
+  myTasks.appendChild(newTask);
+  newTask.innerText = toDoTask;
 }
 
 addTask('Estudar JavaScript');
+
+function taskSubtitle(taskColor) {
+  let myTasks = document.querySelector(".my-tasks");
+  let newSubtitle = document.createElement('div');
+  myTasks.appendChild(newSubtitle);
+  newSubtitle.style.backgroundColor = taskColor;
+}
+
+taskSubtitle('purple');
+
