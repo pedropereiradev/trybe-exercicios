@@ -128,8 +128,21 @@ function taskSubtitle(taskColor) {
   let myTasks = document.querySelector(".my-tasks");
   let newSubtitle = document.createElement('div');
   myTasks.appendChild(newSubtitle);
+  newSubtitle.className = 'task';
   newSubtitle.style.backgroundColor = taskColor;
 }
 
 taskSubtitle('purple');
 
+function selectTask() {
+  let selectedTask = document.querySelector(".task")
+  selectedTask.addEventListener('click', function (originEvent) {
+    console.log(originEvent.target.className);
+    if (originEvent.target.className === "task selected") {
+      originEvent.target.className = "task";
+    } else {
+      originEvent.target.className = "task selected";
+    }
+  });
+}
+selectTask()
