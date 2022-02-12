@@ -68,14 +68,13 @@ addButton('Feriados', 'btn-holiday');
 function addEventClickHoliday() {
   let button = document.querySelector("#btn-holiday");
   let holidays = document.querySelectorAll('.holiday');
-  //console.log(holidays[0].classList);
+
   button.addEventListener("click", function () {
     for (let i = 0; i < holidays.length; i += 1) {
       // if-else retirado do comentário do Daniel Cardoso na thread da Daniella Zuccolotto
       if (holidays[i].style.backgroundColor === "rgb(135, 251, 135)") {
         holidays[i].style.backgroundColor = "rgb(238, 238, 238)";
-      }
-      else {
+      } else {
         holidays[i].style.backgroundColor = "rgb(135, 251, 135)";
       }
     }
@@ -83,3 +82,22 @@ function addEventClickHoliday() {
 }
 
 addEventClickHoliday();
+
+addButton("Sexta-feira", "btn-friday");
+
+function addEventClickFriday() {
+  let button = document.querySelector("#btn-friday");
+  let friday = document.querySelectorAll(".friday");
+  console.log(friday[0].classList);
+  button.addEventListener("click", function () {
+    for (let i = 0; i < friday.length; i += 1) {
+      if (friday[i].style.fontWeight === '700') {
+        friday[i].style.fontWeight = "400";
+      } else {
+        friday[i].style.fontWeight = "700";
+      }
+    }
+  });
+}
+
+addEventClickFriday();
