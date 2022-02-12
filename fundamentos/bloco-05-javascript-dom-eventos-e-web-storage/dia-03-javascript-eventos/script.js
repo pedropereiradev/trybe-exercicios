@@ -55,13 +55,31 @@ function monthCalendar(month) {
 
 monthCalendar(dezDaysList);
 
-function addButton(str) {
+function addButton(str, id) {
   let buttonsContainer = document.querySelector(".buttons-container")
   let button = document.createElement("button");
   button.innerText = str;
-  button.id = "btn-holiday";
+  button.id = id;
   buttonsContainer.appendChild(button);
 }
 
-addButton('Feriados');
+addButton('Feriados', 'btn-holiday');
 
+function addEventClickHoliday() {
+  let button = document.querySelector("#btn-holiday");
+  let holidays = document.querySelectorAll('.holiday');
+  //console.log(holidays[0].classList);
+  button.addEventListener("click", function () {
+    for (let i = 0; i < holidays.length; i += 1) {
+      // if-else retirado do comentário do Daniel Cardoso na thread da Daniella Zuccolotto
+      if (holidays[i].style.backgroundColor === "rgb(135, 251, 135)") {
+        holidays[i].style.backgroundColor = "rgb(238, 238, 238)";
+      }
+      else {
+        holidays[i].style.backgroundColor = "rgb(135, 251, 135)";
+      }
+    }
+  });
+}
+
+addEventClickHoliday();
