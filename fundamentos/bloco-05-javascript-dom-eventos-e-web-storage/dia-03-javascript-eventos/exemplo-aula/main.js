@@ -50,6 +50,11 @@ inputText.addEventListener('keyup', changeText);
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
+// https://www.codexworld.com/how-to/open-url-in-new-browser-window-tab-javascript/#:~:text=If%20you%20want%20to%20open,the%20second%20parameter%20of%20window.
+ let mySpotrybefy = document.querySelector("#my-spotrybefy");
+mySpotrybefy.addEventListener('dblclick', function(){
+  window.open('https://github.com/pedropereiradev', '_blank');
+});
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
