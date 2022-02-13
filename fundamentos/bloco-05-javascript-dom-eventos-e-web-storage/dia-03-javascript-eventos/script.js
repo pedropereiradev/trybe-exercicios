@@ -152,7 +152,7 @@ function markTaskSelected() {
 
   selectedDay.addEventListener("click", function (originEvent) {
     let task = document.querySelector(".task");
-    let taskSelected = task.className; 
+    let taskSelected = task.className;
     let taskColor = task.style.backgroundColor;
 
     if (taskSelected === 'task selected') {
@@ -161,6 +161,34 @@ function markTaskSelected() {
     } else {
       originEvent.target.style.color = "rgb(119, 119, 119)";
     }
-  })
+  });
 }
 markTaskSelected();
+
+function commitmentFunction() {
+  let commitment = document.querySelector("#task-input");
+  let commitmentList = document.querySelector(".task-list")
+
+  if (commitment.value === "") {
+    alert("ERRO! Campo vazio.");
+  } else {
+    let newCommitment = document.createElement("li");
+    commitmentList.appendChild(newCommitment);
+    newCommitment.innerText = commitment.value;
+    commitment.value = "";
+  }
+}
+
+function addCommitment() {
+  let commitmentButton = document.querySelector("#btn-add");
+  let commitment = document.querySelector("#task-input");
+
+  commitmentButton.addEventListener("click", commitmentFunction);
+  // https://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box?rq=1
+  commitment.addEventListener("keyup", function (originEvent) {
+    if (originEvent.keyCode === 13) {
+      commitmentFunction();
+    }
+  });
+}
+addCommitment();
