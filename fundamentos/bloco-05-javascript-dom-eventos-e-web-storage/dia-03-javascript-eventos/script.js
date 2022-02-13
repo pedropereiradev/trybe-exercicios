@@ -137,7 +137,6 @@ taskSubtitle('purple');
 function selectTask() {
   let selectedTask = document.querySelector(".task")
   selectedTask.addEventListener('click', function (originEvent) {
-    console.log(originEvent.target.className);
     if (originEvent.target.className === "task selected") {
       originEvent.target.className = "task";
     } else {
@@ -145,4 +144,22 @@ function selectTask() {
     }
   });
 }
-selectTask()
+selectTask();
+
+function markTaskSelected() {
+  let selectedDay = document.querySelector("#days");
+
+  selectedDay.addEventListener("click", function (originEvent) {
+    let task = document.querySelector(".task");
+    let taskSelected = task.className; 
+    let taskColor = task.style.backgroundColor;
+
+    if (taskSelected === 'task selected') {
+      //console.log(originEvent.target);
+      originEvent.target.style.color = taskColor;
+    } else {
+      originEvent.target.style.color = "rgb(119, 119, 119)";
+    }
+  })
+}
+markTaskSelected();
