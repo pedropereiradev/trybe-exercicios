@@ -105,7 +105,8 @@ addEventClickFriday();
  function zoomDay() {
   let days = document.querySelector("#days");
   
-  days.addEventListener("mouseover", function (overEvent) {
+   days.addEventListener("mouseover", function (overEvent) {
+     overEvent.target.style.cursor = "pointer";
     overEvent.target.style.fontSize = '25px';
   });
   days.addEventListener("mouseout", function (outEvent) {
