@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: rgb(41, 41, 41);
+  background-color: rgb(235, 235, 235);
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#header {
+  color: rgb(27, 68, 3);
+  height: 70px;
+  background-color: rgb(20, 191, 1);
+}
+
+#header h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#form {
+  margin: 20px auto;
+  max-width: 50%;
+}
+
+#name, #email {
+  padding: 7px;
+  border: 1px solid white;
+  font-size: 18px;
+}
+
+#fieldset-content {
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.line-fieldset{
+  border-color: rgb(255, 254, 254);
+  padding: 8px;
+}
+
+.fieldset-legend {
+  color: gray;
+  font-size: 14px;
+}
+
+.input {
+  padding-bottom: 20px;
+}
+
+#textarea {
+  resize: none;
+  margin-top: 8px;
+}
+
+.checkbox-opt {
+  display: block;
+}
+
+#btn-section {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#btn-section button {
+  padding: 10px;
+  width: 180px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid gray ;
+  background-color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#send-button {
+  margin-right: 10px;
+}

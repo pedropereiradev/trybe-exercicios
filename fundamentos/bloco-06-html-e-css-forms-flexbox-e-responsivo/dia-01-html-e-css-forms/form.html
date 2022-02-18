@@ -8,11 +8,11 @@
   <title>TrybeTrip</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <h1>Formulário para concorrer na TrybeTrip</h1>
   </header>
-    <form action="" method="get">
-      <fieldset>
+    <form action="" method="get" id="form">
+      <fieldset id="fieldset-content">
         <div class="input">
           <label for="name">Nome: 
             <input type="text" id="name" minlength="10" maxlength="40" placeholder="Nome completo">
@@ -26,8 +26,8 @@
           
         </div>
         <div class="input">
-          <fieldset>
-            <legend>Destino preferido:</legend>
+          <fieldset class="line-fieldset">
+            <legend class="fieldset-legend">Destino preferido:</legend>
             <label for="city-opt">
               <input type="radio" name="options" id="city-opt"> Cidade
             </label>
@@ -45,12 +45,12 @@
         <div class="input">
           <p id="textarea-paragraph">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
           <label for="answer">
-            <textarea name="" id="" cols="30" rows="10" maxlength="500" placeholder="Espaço para resposta..."></textarea>
+            <textarea name="textarea" id="textarea" cols="60" rows="15" maxlength="500" placeholder="Espaço para resposta..."></textarea>
           </label>
         </div>
         <div class="input">
-          <fieldset>
-            <legend>Qual a melhor data para realizar sua viagem?</legend>
+          <fieldset class="line-fieldset">
+            <legend class="fieldset-legend">Qual a melhor data para realizar sua viagem?</legend>
             <label for="date=trip">Data:
               <input type="date" name="date-trip" id="date-trip">
             </label>
@@ -59,17 +59,19 @@
         </div>
         <div class="input">
           <label for="check-opt1" class="checkbox-opt">
-            <input type="checkbox" name="" id="check-opt1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <input type="checkbox" name="" id="check-opt1"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
           </label>
           <label for="check-opt2" class="checkbox-opt">
-            <input type="checkbox" name="" id="check-opt2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input type="checkbox" name="" id="check-opt2"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
           </label>
         </div>
       </fieldset>
-      <div class="input">
+      <div class="input" id="btn-section">
         <button type="submit" id="send-button">Enviar</button>
         <button type="reset" id="reset-button">Apagar</button>
       </div>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
