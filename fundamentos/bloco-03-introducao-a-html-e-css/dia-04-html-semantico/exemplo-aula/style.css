@@ -1,0 +1,46 @@
+ h1 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*
+Link utilizado para saber sobre margin auto:
+    https://qastack.com.br/programming/1708054/how-can-i-center-ul-li-into-div#:~:text=Para%20centralizar%20o%20conte%C3%BAdo%20embutido,text%2Dalign%3A%20center%3B%20.&text=Basta%20adicionar%20text%2Dalign%3A%20center,Problema%20resolvido.
+*/
+.first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+
+.second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+.third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+.reward{
+    display: inline;
+}
+
+.position {
+    text-align: center;
+}
