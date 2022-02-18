@@ -11,9 +11,9 @@ body{
 }
 
 #header {
-  color: rgb(27, 68, 3);
+  color: white;
   height: 70px;
-  background-color: rgb(20, 191, 1);
+  background-color: rgb(3, 107, 82);
 }
 
 #header h1 {
