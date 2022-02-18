@@ -15,13 +15,13 @@
       <fieldset id="fieldset-content">
         <div class="input">
           <label for="name">Nome: 
-            <input type="text" id="name" minlength="10" maxlength="40" placeholder="Nome completo">
+            <input type="text" id="name" minlength="10" maxlength="40" placeholder="Nome completo" required>
           </label>
           
         </div>
         <div class="input">
           <label for="email">Email: 
-            <input type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="Email">
+            <input type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="Email" required>
           </label>
           
         </div>
@@ -45,7 +45,7 @@
         <div class="input">
           <p id="textarea-paragraph">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
           <label for="answer">
-            <textarea name="textarea" id="textarea" cols="60" rows="15" maxlength="500" placeholder="Espaço para resposta..."></textarea>
+            <textarea name="textarea" id="textarea" cols="60" rows="15" maxlength="500" placeholder="Espaço para resposta..." required></textarea>
           </label>
         </div>
         <div class="input">
@@ -62,7 +62,7 @@
             <input type="checkbox" name="" id="check-opt1"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
           </label>
           <label for="check-opt2" class="checkbox-opt">
-            <input type="checkbox" name="" id="check-opt2"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input type="checkbox" name="" id="check-opt2" required> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
           </label>
         </div>
       </fieldset>

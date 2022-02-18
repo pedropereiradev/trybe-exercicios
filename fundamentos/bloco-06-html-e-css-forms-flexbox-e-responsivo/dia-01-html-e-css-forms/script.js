@@ -5,6 +5,7 @@ function eliminateSend(event) {
   if (pictureAllow.checked) {
     submitButton.submit();
   } else {
+    window.alert("Necessário concordar com a divulgação de imagens");
     event.preventDefault();
   }
 }
