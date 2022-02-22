@@ -1,8 +1,8 @@
 import JustValidate from "just-validate";
 
-const validation = new JustValidate("#form");
+const validate = new JustValidate("#form-trip");
 
-validation
+validate
   .addField("#name", [
     {
       rule: "minLength",
