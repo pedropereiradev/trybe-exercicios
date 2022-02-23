@@ -1,6 +1,4 @@
-import JustValidate from "just-validate";
-
-const validate = new JustValidate("#form-trip");
+const validate = new window.JustValidate("#form-trip");
 
 validate
   .addField("#name", [
@@ -17,6 +15,7 @@ validate
       errorMessage: "Nome é necessário",
     },
   ])
+
   .addField("#email", [
     {
       rule: "minLength",
@@ -34,4 +33,23 @@ validate
       rule: "email",
       errorMessage: "Email inválido!",
     },
+  ])
+
+  .addField("#textarea", [
+    {
+      rule: "maxLength",
+      value: 500,
+    },
+    {
+      rule: "required",
+      errorMessage: "Necessário preencher campo",
+    },
+  ])
+
+  .addField("#consent-checkbox", [
+    {
+      rule: "required",
+      errorMessage: "Necessário",
+    },
   ]);
+ 
