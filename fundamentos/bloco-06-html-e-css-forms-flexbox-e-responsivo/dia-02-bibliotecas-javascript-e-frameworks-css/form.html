@@ -9,6 +9,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <title>TrybeTrip</title>
 </head>
 
@@ -31,35 +32,35 @@
     <div class="mb-3 container form-check">
       <div class="form-check form-check-inline">
         <label for="city-opt" class="form-check-label">Cidade</label>
-        <input type="radio" name="options" id="city-opt" class="form-check-input">
+        <input type="radio" name="options" id="city-opt" class="form-check-input radio-opt">
       </div>
 
       <div class="form-check form-check-inline">
         <label for="field-opt" class="form-check-label">Campo</label>
-        <input type="radio" name="options" id="field-opt" class="form-check-input">
+        <input type="radio" name="options" id="field-opt" class="form-check-input radio-opt">
       </div>
 
       <div class="form-check form-check-inline">
         <label for="beach-opt" class="form-check-label">Praia</label>
-        <input type="radio" name="options" id="beach-opt" class="form-check-input">
+        <input type="radio" name="options" id="beach-opt" class="form-check-input radio-opt">
       </div>
 
       <div class="form-check form-check-inline">
         <label for="mountain-opt" class="form-check-label">Montanhas</label>
-        <input type="radio" name="options" id="mountain-opt" class="form-check-input">
+        <input type="radio" name="options" id="mountain-opt" class="form-check-input radio-opt">
       </div>
     </div>
 
     <div class="mb-3 container">
       <p class="lead">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
       <label for="answer"></label>
-      <textarea name="textarea" id="textarea" cols="60" rows="15" maxlength="500" placeholder="Espaço para resposta..."
+      <textarea name="textarea" id="textarea" cols="60" rows="15" placeholder="Espaço para resposta..."
         class="form-control"></textarea>
     </div>
 
     <div class="mb-3 container">
       <label for="date=trip" class="form-check-label">Data: </label>
-      <input type="text" name="datepicker" class="form-control" id="myInputId">
+      <input type="text" name="datepicker" class="form-control" id="input-date">
     </div>
     <div class="mb-3 container">
       <div class="form-check form-check-inline">
@@ -69,8 +70,8 @@
       </div>
 
       <div class="form-check form-check-inline">
-        <input type="checkbox" name="" id="check-opt2" class="form-check-input">
-        <label for="check-opt2" class="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na
+        <input type="checkbox" name="" id="consent-checkbox" class="form-check-input">
+        <label for="consent-checkbox" class="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na
           divulgação de concursos futuros.</label>
       </div>
     </div>
@@ -79,7 +80,7 @@
       <button type="reset" id="reset-button" class="btn btn-outline-danger">Apagar</button>
     </div>
   </form>
-  
+
   <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
   <script src="datePicker.js"></script>
   <script src="justValidateForm.js"></script>
