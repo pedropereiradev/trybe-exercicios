@@ -5,3 +5,38 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-size: 1.5rem;
+  margin: 0 25px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+#title{
+  order: 2;
+  font-size: 22px;
+}
+
+#nav-bar {
+  order: 1;
+  padding-right: 10px;
+}
+
+
+#nav-bar ul{
+  list-style: none;
+  display:none;
+
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
