@@ -1,4 +1,4 @@
-const buttonMenu = document.querySelector('#btn-menu');
+const buttonMenu = document.querySelector('#btn-menu-mobile');
 
 buttonMenu.addEventListener('click', () => {
   const menuMobile = document.querySelector("#menu-mobile");

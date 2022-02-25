@@ -42,10 +42,8 @@ article, footer {
   padding-right: 15px;
 }
 
-
-#nav-bar ul{
-  list-style: none;
-  display:none;
+#menu-bar {
+  display: none;
 }
 
 #menu-mobile {
@@ -67,7 +65,7 @@ article, footer {
   padding: 5px 0;
 }
 
-#btn-menu {
+#btn-menu-mobile {
   background-color: rgb(24, 24, 24);
   border: 1px solid rgb(24, 24, 24);
   color: white;
@@ -104,3 +102,34 @@ article, footer {
   list-style: none;
   font-size: 18px;
 }
+
+@media screen and (min-width: 607px) {
+  #btn-menu-mobile {
+    display: none;
+  }
+
+  #menu-bar {
+    color: white;
+  display: flex;
+  list-style: none;
+  }
+
+  #menu-bar li {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 24px;
+    flex-shrink: 1;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  #nav-bar {
+    order: 2;
+  }
+}
+
