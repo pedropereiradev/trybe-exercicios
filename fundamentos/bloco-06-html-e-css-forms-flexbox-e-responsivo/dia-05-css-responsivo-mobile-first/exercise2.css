@@ -133,3 +133,9 @@ article, footer {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .aside-menus {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
