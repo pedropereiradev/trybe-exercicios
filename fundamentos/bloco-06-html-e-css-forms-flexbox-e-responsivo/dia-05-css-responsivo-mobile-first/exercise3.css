@@ -88,3 +88,36 @@ body {
     width: 80%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #aside {
+    display: none;
+  }
+
+  body {
+    padding: 0;
+  }
+  
+  #content img {
+    max-width: 90vw;
+  }
+
+  #navigation ul{
+    flex-direction: column;
+  }
+  
+  #navigation li a {
+    border: none;
+  }
+
+  #header {
+    position: fixed;
+    display: block;
+    width: 100%;
+  }
+
+  /* https://blog.duda.co/pt-br/header-fixo#:~:text=Um%20header%20fixo%20(tamb%C3%A9m%20conhecido,no%20topo%20da%20p%C3%A1gina%20rolada. */
+  #header + #navigation {
+    padding-top: 80px;
+  }
+}
