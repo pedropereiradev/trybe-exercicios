@@ -10,6 +10,14 @@ body {
   font-size: 1.5rem;
 }
 
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
 header {
   padding-left: 10px;
   margin: 0;
@@ -18,7 +26,7 @@ header {
   align-items: center;
 }
 
-article {
+article, footer {
   margin: 25px;
 }
 
@@ -66,10 +74,33 @@ article {
   font-weight: 700;
 }
 
-h1 {
-  font-size: 1.7rem;
+.aside-menus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h2 {
-  font-size: 1.5rem;
+.aside-one {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.aside-two {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.aside-title{
+  padding-top: 10px;
+}
+
+.show-aside-chapters, .show-aside-info {
+  display: none;
+}
+
+#chapters-list-mobile, #info-list-mobile {
+  list-style: none;
+  font-size: 18px;
 }
