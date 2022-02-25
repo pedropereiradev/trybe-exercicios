@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+header {
+  padding-left: 10px;
+  margin: 0;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+}
+
+article, footer {
+  margin: 25px;
+}
+
+#title{
+  color: white;
+  font-weight: 700;
+  order: 2;
+  font-size: 18px;
+}
+
+#nav-bar {
+  order: 1;
+  padding-right: 15px;
+}
+
+#menu-bar {
+  display: none;
+}
+
+#menu-mobile {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(24, 24, 24);
+  width: 100px;
+}
+
+.show-menu {
+  display: none;
+}
+
+.menu-mobile-item {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+#btn-menu-mobile {
+  background-color: rgb(24, 24, 24);
+  border: 1px solid rgb(24, 24, 24);
+  color: white;
+  font-weight: 700;
+}
+
+.aside-menus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-one {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.aside-two {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.aside-title{
+  padding-top: 10px;
+}
+
+.show-aside-chapters, .show-aside-info {
+  display: none;
+}
+
+#chapters-list-mobile, #info-list-mobile {
+  list-style: none;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 607px) {
+  #btn-menu-mobile {
+    display: none;
+  }
+
+  #menu-bar {
+    color: white;
+  display: flex;
+  list-style: none;
+  }
+
+  #menu-bar li {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 24px;
+    flex-shrink: 1;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  #nav-bar {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .aside-menus {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
