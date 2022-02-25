@@ -8,33 +8,66 @@ html {
 
 body {
   font-size: 1.5rem;
-  margin: 0 25px;
 }
 
 header {
+  padding-left: 10px;
+  margin: 0;
+  background-color: rgb(24, 24, 24);
   display: flex;
   align-items: center;
 }
 
+article {
+  margin: 25px;
+}
+
 #title{
+  color: white;
+  font-weight: 700;
   order: 2;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #nav-bar {
   order: 1;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 
 #nav-bar ul{
   list-style: none;
   display:none;
+}
 
+#menu-mobile {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(24, 24, 24);
+  width: 100px;
+}
+
+.show-menu {
+  display: none;
+}
+
+.menu-mobile-item {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+#btn-menu {
+  background-color: rgb(24, 24, 24);
+  border: 1px solid rgb(24, 24, 24);
+  color: white;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 h2 {
