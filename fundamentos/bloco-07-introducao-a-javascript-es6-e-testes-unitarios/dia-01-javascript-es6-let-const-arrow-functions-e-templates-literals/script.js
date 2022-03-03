@@ -1,3 +1,5 @@
+//Parte 1
+
 // Exercício 1:
 const testingScope = (escopo) => {
   if (escopo === true) {
@@ -20,3 +22,22 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 const orderArray = (oddsAndEvens) => oddsAndEvens.sort((a, b) => a - b);
 
 console.log(orderArray(oddsAndEvens)); // será necessário alterar essa linha 😉
+
+
+
+//Parte 2
+
+// Exercício 1:
+
+// const fatorial = num => {
+//    let resultado = num;
+//   for (let i = 1; i < num; i += 1) {
+//     resultado *= i;
+//   }
+//   return resultado;
+
+// }
+
+const fatorial = num => (num === 1) ? 1 : num * fatorial(num - 1);
+
+console.log(fatorial(1));
