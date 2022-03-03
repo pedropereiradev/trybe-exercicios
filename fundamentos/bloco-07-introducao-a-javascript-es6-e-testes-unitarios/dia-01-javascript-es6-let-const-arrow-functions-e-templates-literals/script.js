@@ -23,8 +23,6 @@ const orderArray = (oddsAndEvens) => oddsAndEvens.sort((a, b) => a - b);
 
 console.log(orderArray(oddsAndEvens)); // será necessário alterar essa linha 😉
 
-
-
 //Parte 2
 
 // Exercício 1:
@@ -38,6 +36,20 @@ console.log(orderArray(oddsAndEvens)); // será necessário alterar essa linha �
 
 // }
 
-const fatorial = num => (num === 1) ? 1 : num * fatorial(num - 1);
+const fatorial = (num) => (num === 1 ? 1 : num * fatorial(num - 1));
 
 console.log(fatorial(1));
+
+// Exercício 2:
+const longestWord = phrase => {
+  let biggerWord = "";
+
+  phrase.split(" ").forEach((word) => {
+    if (word.length > biggerWord.length) {
+      biggerWord = word;
+    }
+  });
+  console.log(biggerWord);
+};
+
+longestWord("Antônio foi no banheiro e não sabemos o que aconteceu");
