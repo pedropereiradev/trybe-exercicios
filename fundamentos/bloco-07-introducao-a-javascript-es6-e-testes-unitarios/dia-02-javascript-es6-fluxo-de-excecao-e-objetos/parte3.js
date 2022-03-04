@@ -22,6 +22,13 @@ function addNewValue(obj, key, value) {
   obj[key] = value;
 }
 
-addNewValue(lesson2, 'turno', 'noite');
+addNewValue(lesson2, "turno", "noite");
+
+function keyList(obj) {
+  console.log(Object.keys(obj));
+}
+
+keyList(lesson1);
+
 
 console.log(lesson2);
