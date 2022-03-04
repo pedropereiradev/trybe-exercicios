@@ -1,7 +1,8 @@
 const submitButton = document.querySelector('#send-button');
-const pictureAllow = document.querySelector('#check-opt2');
 
 function eliminateSend(event) {
+  const pictureAllow = document.querySelector("#check-opt2");
+
   if (pictureAllow.checked) {
     submitButton.submit();
   } else {
@@ -10,3 +11,12 @@ function eliminateSend(event) {
 }
 
 submitButton.addEventListener('click', eliminateSend);
+
+const nome = document.querySelector("#input-name");
+
+
+/* const commentArea = document.getElementById("comment-area");
+commentArea.addEventListener('keypress', () => {
+  let textLength = commentArea;
+  console.log(textLength);
+}); */
