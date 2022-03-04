@@ -20,6 +20,7 @@ const lesson3 = {
 
 function addNewValue(obj, key, value) {
   obj[key] = value;
+  console.log(obj);
 }
 
 addNewValue(lesson2, "turno", "noite");
@@ -30,5 +31,11 @@ function keyList(obj) {
 
 keyList(lesson1);
 
+function objectLength(obj) {
+  const objLength = Object.keys(obj);
+  console.log(objLength.length);
+}
 
-console.log(lesson2);
+objectLength(lesson3);
+
+
