@@ -75,3 +75,15 @@ function getValueByNumber(lesson, position) {
 }
 
 getValueByNumber(lesson2, 0);
+
+function verifyPair(lesson, key, value) {
+  const lessonKey = Object.keys(lesson);
+  const lessonValue = Object.values(lesson);
+  
+  if (lessonKey.includes(key) && lesson[key] === value) {
+    return true;
+  }
+  return false
+}
+
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
