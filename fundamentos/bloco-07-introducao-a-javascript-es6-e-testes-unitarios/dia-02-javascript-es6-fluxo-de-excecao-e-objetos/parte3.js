@@ -55,3 +55,16 @@ Object.assign(allLessons.lesson2, lesson2);
 Object.assign(allLessons.lesson3, lesson3);
 
 console.log(allLessons);
+
+
+function numberOfStudents() {
+  const lessons = Object.keys(allLessons);
+  let studentsCount = 0;
+  
+  for (let i = 0; i < lessons.length; i += 1) {
+    studentsCount += allLessons[lessons[i]].numeroEstudantes;
+  }
+  console.log(studentsCount);
+}
+
+numberOfStudents();
