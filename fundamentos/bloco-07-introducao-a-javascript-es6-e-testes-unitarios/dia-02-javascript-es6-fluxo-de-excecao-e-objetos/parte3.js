@@ -38,4 +38,20 @@ function objectLength(obj) {
 
 objectLength(lesson3);
 
+function valuesList(obj) {
+  console.log(Object.values(obj));
+}
 
+valuesList(lesson3);
+
+const allLessons = {
+  lesson1: {},
+  lesson2: {},
+  lesson3: {},
+};
+
+Object.assign(allLessons.lesson1, lesson1);
+Object.assign(allLessons.lesson2, lesson2);
+Object.assign(allLessons.lesson3, lesson3);
+
+console.log(allLessons);
