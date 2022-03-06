@@ -68,3 +68,10 @@ function numberOfStudents() {
 }
 
 numberOfStudents();
+
+function getValueByNumber(lesson, position) {
+  const keyValue = Object.keys(lesson);
+  console.log(lesson[keyValue[position]]);
+}
+
+getValueByNumber(lesson2, 0);
