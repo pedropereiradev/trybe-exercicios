@@ -87,3 +87,20 @@ function verifyPair(lesson, key, value) {
 }
 
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+// BONUS
+
+function mathStudents() {
+  const lessons = Object.keys(allLessons);
+  let mathStudents = 0;
+
+  for (let i = 0; i < lessons.length; i += 1) {
+    if (allLessons[lessons[i]].materia === 'Matemática') {
+      mathStudents += allLessons[lessons[i]].numeroEstudantes;
+    }
+  }
+  console.log(mathStudents);
+  }
+
+mathStudents();
+
