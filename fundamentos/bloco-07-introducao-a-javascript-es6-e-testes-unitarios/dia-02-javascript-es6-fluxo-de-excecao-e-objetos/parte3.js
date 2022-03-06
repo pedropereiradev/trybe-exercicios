@@ -104,3 +104,23 @@ function mathStudents() {
 
 mathStudents();
 
+function createReport(teacher) {
+  const lessons = Object.keys(allLessons);
+  let aulas = [];
+  let students = 0;
+  for (let i = 0; i < lessons.length; i += 1) {
+    if (allLessons[lessons[i]].professor === teacher) {
+      students += allLessons[lessons[i]].numeroEstudantes;
+      aulas += `${allLessons[lessons[i]].materia} `;
+    }
+  }
+
+  const report = {
+    professor: teacher,
+    aula: aulas,
+    estudantes: students
+  };
+  console.log(report);
+}
+console.log('-----------------------');
+createReport('Carlos');
