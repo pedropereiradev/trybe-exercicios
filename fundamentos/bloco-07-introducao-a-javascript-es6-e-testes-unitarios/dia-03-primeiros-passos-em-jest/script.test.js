@@ -41,5 +41,7 @@ describe('The myFizzBuzz function', () => {
     expect(myFizzBuzz(15)).toBe('fizzbuzz');
   });
 
-  
+  it("Check 21 return fizz", () => {
+    expect(myFizzBuzz(21)).toBe("fizz");
+  });
 });
