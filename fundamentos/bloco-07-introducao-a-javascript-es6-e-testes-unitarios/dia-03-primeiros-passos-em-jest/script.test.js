@@ -1,4 +1,4 @@
-const {sum, myRemove} = require("./script");
+const { sum, myRemove, myFizzBuzz } = require("./script");
 
 describe("The sum function", () => {
   it("adds 4 + 5 to equal 9", () => {
@@ -37,4 +37,8 @@ describe('The myRemove function', () => {
     const myRemoveArray = [1, 2, 3, 4];
     expect([1, 2, 3, 4]).toEqual(myRemove([1, 2, 3, 4], 5));
   });
+});
+
+describe('The myFizzBuzz function', () => {
+  
 });
