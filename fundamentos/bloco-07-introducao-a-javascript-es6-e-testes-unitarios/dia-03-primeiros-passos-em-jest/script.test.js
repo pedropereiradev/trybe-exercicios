@@ -27,4 +27,9 @@ describe('The myRemove function', () => {
     const myRemoveArray = [1, 2, 3, 4];
     expect([1, 2, 4]).toEqual(myRemove([1, 2, 3, 4], 3));
   })
+
+  it('Check myREmove([1, 2, 3, 4], 3) not return [1, 2, 3, 4]', () => {
+    const myRemoveArray = [1, 2, 3, 4];
+    expect([1, 2, 3, 4]).not.toEqual(myRemove[1, 2, 3, 4], 3);
+  });
 });
