@@ -23,13 +23,18 @@ describe("The sum function", () => {
 });
 
 describe('The myRemove function', () => {
-  it('Removes 3 from [1, 2, 3, 4] array', () => {
+  it("Check myRemove([1, 2, 3, 4], 3) call return the expected array", () => {
     const myRemoveArray = [1, 2, 3, 4];
     expect([1, 2, 4]).toEqual(myRemove([1, 2, 3, 4], 3));
-  })
+  });
 
   it('Check myREmove([1, 2, 3, 4], 3) not return [1, 2, 3, 4]', () => {
     const myRemoveArray = [1, 2, 3, 4];
     expect([1, 2, 3, 4]).not.toEqual(myRemove[1, 2, 3, 4], 3);
+  });
+
+  it("Check myRemove([1, 2, 3, 4], 5) call return the expected array", () => {
+    const myRemoveArray = [1, 2, 3, 4];
+    expect([1, 2, 3, 4]).toEqual(myRemove([1, 2, 3, 4], 5));
   });
 });
