@@ -37,5 +37,9 @@ describe('The myRemove function', () => {
 });
 
 describe('The myFizzBuzz function', () => {
+  it('Check 15 return fizzbuzz', () => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+  });
 
+  
 });
