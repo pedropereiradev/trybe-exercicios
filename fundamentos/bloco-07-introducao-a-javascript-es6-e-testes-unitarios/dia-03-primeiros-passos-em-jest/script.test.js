@@ -1,4 +1,4 @@
-const sum = require("./script");
+const {sum, myRemove} = require("./script");
 
 describe("The sum function", () => {
   it("adds 4 + 5 to equal 9", () => {
@@ -20,4 +20,11 @@ describe("The sum function", () => {
       sum(4, "5");
     }).toThrowError(new Error("parameters must be numbers"));
   });
+});
+
+describe('The myRemove function', () => {
+  it('Removes 3 from [1, 2, 3, 4] array', () => {
+    const myRemoveArray = [1, 2, 3, 4];
+    expect([1, 2, 4]).toEqual(myRemove([1, 2, 3, 4], 3));
+  })
 });
