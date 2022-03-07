@@ -26,8 +26,6 @@ function myFizzBuzz(num) {
   return num;
 }
 
-// implemente seus testes aqui
-
 module.exports = {
   sum,
   myRemove,
