@@ -60,8 +60,18 @@ function decode(str) {
   return newStr;
 }
 
-function techList() {
-  
+function techList(techs, name) {
+  techs.sort();
+  let techArray = [];
+  if (!techs.length) return 'Vazio!';
+
+  for (let i = 0; i < techs.length; i += 1) {
+    techArray[i] = {
+      tech: techs[i],
+      name: name,
+    }
+  }
+  return techArray;
 }
 
 
