@@ -134,7 +134,13 @@ const professionalBoard = [
 
 // Pesquisa
 const searchEmployee = (id, detail) => {
-
+let requiredInfo = ''
+  professionalBoard.forEach(element => {
+    if (element.id === id) {
+     requiredInfo = element[detail];
+    }
+  });
+  return requiredInfo;
 }
 
 module.exports = {

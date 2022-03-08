@@ -151,4 +151,16 @@ describe('Testa a função searchEmployee', () => {
   it('Testa se a função searchEmployee é definida', () => {
     expect(typeof searchEmployee).toBe('function');
   });
+  it('Search ID and Info', () => {
+    expect(searchEmployee('5569-4', 'lastName')).toEqual('Jobs');
+    expect(searchEmployee("5569-4", "specialities")).toEqual([
+      "Frontend",
+      "Redux",
+      "React",
+      "CSS",
+    ]);
+    expect(searchEmployee("9852-2-2", "firstName")).toEqual("Jeff");
+
+
+  })
 })
