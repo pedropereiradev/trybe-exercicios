@@ -132,16 +132,34 @@ const professionalBoard = [
   },
 ];
 
+const validId = (id, employees) => {
+  let count = 0;
+  for (let i = 0; i < employees.length; i += 1) {
+    if (employees[i].id === id) {
+      count += 1;
+    }
+  }
+  if (count === 0) {
+    throw new Error('ID não identificada');
+  }
+}
+
 // Pesquisa
 const searchEmployee = (id, detail) => {
-let requiredInfo = ''
+  let requiredInfo = '';
   professionalBoard.forEach(element => {
-    if (element.id === id) {
-     requiredInfo = element[detail];
+    try {
+      validId(id, professionalBoard);
+      if (element.id === id) requiredInfo = element[detail];
+    } catch (error) {
+      throw error.message
     }
+
   });
   return requiredInfo;
 }
+
+console.log(searchEmployee("9852-2-2", "lastName"));
 
 module.exports = {
   sum,
