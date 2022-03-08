@@ -161,7 +161,14 @@ describe('Testa a função searchEmployee', () => {
     ]);
     expect(searchEmployee("9852-2-2", "firstName")).toEqual("Jeff");
   });
+  
   it('Invalid ID message', () => {
     expect(() => searchEmployee('1234', 'firstName')).toThrow('ID não identificada');
   });
-})
+
+  it("Invalid Info message", () => {
+    expect(() => searchEmployee("4678-2", "passWord")).toThrow(
+      "Informação indisponível"
+    );
+  });  
+});

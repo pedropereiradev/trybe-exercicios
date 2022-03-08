@@ -132,11 +132,14 @@ const professionalBoard = [
   },
 ];
 
-const validId = (id, employees) => {
+const validIdAndInfo = (id, detail, employees) => {
   let count = 0;
   for (let i = 0; i < employees.length; i += 1) {
     if (employees[i].id === id) {
       count += 1;
+    }
+    if (typeof employees[i][detail] === 'undefined') {
+      throw new Error("Informação indisponível");
     }
   }
   if (count === 0) {
@@ -149,7 +152,7 @@ const searchEmployee = (id, detail) => {
   let requiredInfo = '';
   professionalBoard.forEach(element => {
     try {
-      validId(id, professionalBoard);
+     validIdAndInfo(id, detail, professionalBoard);
       if (element.id === id) requiredInfo = element[detail];
     } catch (error) {
       throw error.message
@@ -158,8 +161,6 @@ const searchEmployee = (id, detail) => {
   });
   return requiredInfo;
 }
-
-console.log(searchEmployee("9852-2-2", "lastName"));
 
 module.exports = {
   sum,
