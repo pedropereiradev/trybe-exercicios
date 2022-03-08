@@ -26,8 +26,42 @@ function myFizzBuzz(num) {
   return num;
 }
 
+function encodeMatch(match) {
+  let code = {
+    a: "1",
+    e: "2",
+    i: "3",
+    o: "4",
+    u: "5",
+  };
+  return code[match];
+}
+
+function decodeMatch(match) {
+  let code = {
+    1: "a",
+    2: "e",
+    3: "i",
+    4: "o",
+    5: "u",
+  };
+  return code[match];
+}
+
+function encode(str) {
+  let newStr = str.replace(/a|e|i|o|u/gi, encodeMatch);
+  return newStr;
+}
+
+function decode(str) {
+  let newStr = str.replace(/1|2|3|4|5/gi, decodeMatch);
+  return newStr;
+}
+
 module.exports = {
   sum,
   myRemove,
   myFizzBuzz,
+  encode,
+  decode
 };

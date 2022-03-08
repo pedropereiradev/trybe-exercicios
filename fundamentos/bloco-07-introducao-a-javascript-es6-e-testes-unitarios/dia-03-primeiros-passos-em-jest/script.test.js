@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require("./script");
+const { sum, myRemove, myFizzBuzz, encode, decode} = require("./script");
 
 describe("The sum function", () => {
   it("adds 4 + 5 to equal 9", () => {
@@ -57,3 +57,9 @@ describe('The myFizzBuzz function', () => {
     expect(myFizzBuzz('fizz')).toBeFalsy();
   });
 });
+
+describe('The encode function', () => {
+
+});
+
+describe("The dencode function", () => {});
