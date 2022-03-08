@@ -60,6 +60,7 @@ function decode(str) {
   return newStr;
 }
 
+// Exercício 5
 function techList(techs, name) {
   techs.sort();
   let techArray = [];
@@ -74,6 +75,21 @@ function techList(techs, name) {
   return techArray;
 }
 
+// Exercício 6
+function hydrate(str) {
+  let add = 0;
+  let regex = /\d+/g;
+  
+  let matches = str.match(regex);
+
+  for (let i = 0; i < matches.length; i += 1) {
+    add += parseInt(matches[i], 10);
+  }
+
+  if (add <= 1) return `${add} copo de água`;
+
+  return `${add} copos de água`;
+}
 
 module.exports = {
   sum,
@@ -82,4 +98,5 @@ module.exports = {
   encode,
   decode,
   techList,
+  hydrate,
 };
