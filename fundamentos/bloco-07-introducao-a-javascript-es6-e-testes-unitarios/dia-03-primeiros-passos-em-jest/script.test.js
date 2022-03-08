@@ -62,10 +62,18 @@ describe('The encode function', () => {
   it('Check encode function exists', () => {
     expect(typeof encode).toBe('function');
   });
+  it('Expect vogals be encoded to numbers', () => {
+    expect(encode('Hello World!')).toBe('H2ll4 W4rld!');
+    expect(encode("What are you doing now?")).toBe("Wh1t 1r2 y45 d43ng n4w?");
+  });
 });
 
 describe("The decode function", () => {
   it("Check decode function exists", () => {
     expect(typeof decode).toBe("function");
+  });
+  it('Expect numbers to be decoded to vogals', () => {
+    expect(decode("H2ll4 W4rld!")).toBe("Hello World!");
+    expect(decode("Wh1t 1r2 y45 d43ng n4w?")).toBe("What are you doing now?");
   });
 });
