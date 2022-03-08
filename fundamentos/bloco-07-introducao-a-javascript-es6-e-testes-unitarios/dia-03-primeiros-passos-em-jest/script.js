@@ -18,6 +18,7 @@ function myRemove(arr, item) {
   return newArr;
 }
 
+// Exercício 3
 function myFizzBuzz(num) {
   if (typeof num !== 'number') return false;
   if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
@@ -26,6 +27,7 @@ function myFizzBuzz(num) {
   return num;
 }
 
+// Exercício 4
 function encodeMatch(match) {
   let code = {
     a: "1",
@@ -58,10 +60,16 @@ function decode(str) {
   return newStr;
 }
 
+function techList() {
+  
+}
+
+
 module.exports = {
   sum,
   myRemove,
   myFizzBuzz,
   encode,
-  decode
+  decode,
+  techList,
 };
