@@ -59,7 +59,13 @@ describe('The myFizzBuzz function', () => {
 });
 
 describe('The encode function', () => {
-
+  it('Check encode function exists', () => {
+    expect(typeof encode).toBe('function');
+  });
 });
 
-describe("The dencode function", () => {});
+describe("The decode function", () => {
+  it("Check decode function exists", () => {
+    expect(typeof decode).toBe("function");
+  });
+});
