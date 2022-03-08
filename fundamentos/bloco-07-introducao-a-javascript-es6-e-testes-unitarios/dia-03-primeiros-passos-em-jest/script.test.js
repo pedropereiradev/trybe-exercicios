@@ -51,5 +51,9 @@ describe('The myFizzBuzz function', () => {
 
   it('Check 4 return 4', () => {
     expect(myFizzBuzz(4)).toBe(4);
-  })
+  });
+
+  it('Check "fizz" return false', () => {
+    expect(myFizzBuzz('fizz')).toBeFalsy();
+  });
 });
