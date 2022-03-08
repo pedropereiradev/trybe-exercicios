@@ -6,6 +6,7 @@ const {
   decode,
   techList,
   hydrate,
+  searchEmployee,
 } = require("./script");
 
 describe("The sum function", () => {
@@ -145,3 +146,9 @@ describe("Testa a função hydrate", () => {
     expect(hydrate("4 caipirinhas e 2 cervejas")).toBe("6 copos de água");
   });
 });
+
+describe('Testa a função searchEmployee', () => {
+  it('Testa se a função searchEmployee é definida', () => {
+    expect(typeof searchEmployee).toBe('function');
+  });
+})
