@@ -48,4 +48,8 @@ describe('The myFizzBuzz function', () => {
   it("Check 20 return fizz", () => {
     expect(myFizzBuzz(20)).toBe("buzz");
   });
+
+  it('Check 4 return 4', () => {
+    expect(myFizzBuzz(4)).toBe(4);
+  })
 });
