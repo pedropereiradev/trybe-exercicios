@@ -1,6 +1,7 @@
 import './App.css';
+import Header from './Header';
 
-const compromissos = [
+/* const compromissos = [
   'Estudar React',
   'Estudar EDO',
   'Fazer trabalho EDO',
@@ -11,13 +12,11 @@ const Task = (value) => {
   return (
     <li>{value}</li>
   );
-}
+} */
 
 function App() {
-  return (
-    <ul>
-      {compromissos.map((compromisso) => Task(compromisso))}
-    </ul>
+  return ( 
+    <Header />
   );
 }
 
