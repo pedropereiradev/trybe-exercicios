@@ -1,0 +1,12 @@
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  width: 60vw;
+}
+
+@media (max-width: 700px) {
+  .pokedex {
+    flex-direction: column;
+  }
+}

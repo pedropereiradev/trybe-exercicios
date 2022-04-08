@@ -4,7 +4,7 @@ import Header from './Components/Header';
 
 function App() {
   return (
-    <main>
+    <main className='main-content'>
       <Header title='Pokedex' />
       <Pokedex />
     </main>
