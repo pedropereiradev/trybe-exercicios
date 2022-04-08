@@ -7,7 +7,8 @@ const pokemons = [
       value: 6.0,
       measurementUnit: 'kg',
     },
-    image: 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png',
+    image:
+      'https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png',
     moreInfo: 'https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)',
   },
   {
@@ -63,7 +64,7 @@ const pokemons = [
       value: 4.0,
       measurementUnit: 'kg',
     },
-    image: 'https://cdn2.bulbagarden.net/upload/4/43/Spr_5b_151.png',
+    image: 'https://archives.bulbagarden.net/media/upload/5/52/Spr_4d_151.png',
     moreInfo: 'https://bulbapedia.bulbagarden.net/wiki/Mew_(Pok%C3%A9mon)',
   },
   {
