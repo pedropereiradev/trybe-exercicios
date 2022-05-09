@@ -95,3 +95,28 @@ describe("Exercício 4", () => {
       .toBe('teste');
   })
 })
+
+describe("Testa requisição a API dogAPI", () => {
+  services.dogApi = jest.fn();
+  afterEach(services.dogApi.mockReset);
+
+  it("Deve interpretar que a requisição se resolveu e teve como valor 'request sucess'", async () => {
+    services.dogApi.mockResolvedValue('request sucess');
+
+    services.dogApi();
+    expect(services.dogApi).toHaveBeenCalled();
+    expect(services.dogApi).toHaveBeenCalledTimes(1);
+    await expect(services.dogApi()).resolves.toBe('request sucess');
+    expect(services.dogApi).toHaveBeenCalledTimes(2);
+  });
+
+  it("deve interpretar que a requisição falhou e ter como valor 'request failed'", async () => {
+    services.dogApi.mockResolvedValue('request failed');
+
+    services.dogApi();
+    expect(services.dogApi).toHaveBeenCalled()
+    expect(services.dogApi).toHaveBeenCalledTimes(1);
+    await expect(services.dogApi()).rejects.toBe('request failed');
+    expect(services.dogApi).toHaveBeenCalledTimes(2);
+  });
+})
